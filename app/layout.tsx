@@ -1,19 +1,26 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import './globals.css'
+
+export const viewport: Viewport = {
+  themeColor: "#0D1117",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Maresia Bebidas | Distribuidora e Adega em Santos",
   description: "Referência em logística de bebidas B2B e varejo em Santos. Entrega de carga pesada e a melhor adega da Baixada Santista desde 2007.",
   keywords: ["Distribuidora de bebidas Santos", "Atacado de bebidas", "Logística B2B bebidas", "Maresia Bebidas", "Adega Santos"],
   authors: [{ name: "Luan Souza Dev" }],
+  metadataBase: new URL("https://maresia-bebidas.com.br"),
   openGraph: {
     title: "Maresia Bebidas - Atacado e Varejo",
     description: "O melhor preço de bebidas da Baixada Santista direto para seu comércio ou evento.",
-    url: "https://maresia-bebidas.com.br", // Substitua pelo seu domínio
+    url: "https://maresia-bebidas.com.br",
     siteName: "Maresia Bebidas",
     images: [
       {
-        url: "/logo.png", 
+        url: "/logo.png",
         width: 1200,
         height: 630,
       },
@@ -24,6 +31,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://maresia-bebidas.com.br",
   },
 };
 
