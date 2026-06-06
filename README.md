@@ -1,8 +1,8 @@
 <div align="center">
 
-# Marésia Bebidas
+# Maresia Bebidas
 
-Site institucional da Marésia Bebidas.
+Site desenvolvido para a Maresia Bebidas, empresa da região de Santos, SP.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -15,7 +15,7 @@ Site institucional da Marésia Bebidas.
 
 ## 📋 Sobre
 
-Site institucional da Marésia Bebidas com apresentação dos produtos, história da marca e informações de contato.
+Projeto freelance desenvolvido para a **Maresia Bebidas**, empresa localizada na região de Santos, SP. O site apresenta os produtos da marca, história e informações de contato.
 
 ## 🚀 Como Rodar
 
