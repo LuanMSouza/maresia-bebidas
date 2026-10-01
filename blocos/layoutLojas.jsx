@@ -26,7 +26,7 @@ export default function Lojas() {
             {/* CARD 1: LOGÍSTICA B2B */}
             <div className="relative h-[500px] md:h-[450px] lg:h-[480px] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden group border border-white/5 bg-black shadow-2xl">
                 <Image
-                    src="/caminhão.jpeg"
+                    src="/caminhao.jpeg"
                     alt="Frota Maresia"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
