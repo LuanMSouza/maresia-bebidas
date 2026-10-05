@@ -19,13 +19,6 @@ export const metadata: Metadata = {
     description: "O melhor preço de bebidas da Baixada Santista direto para seu comércio ou evento.",
     url: "https://maresia-bebidas.com",
     siteName: "Maresia Bebidas",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
     locale: "pt_BR",
     type: "website",
   },
@@ -48,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-BR">
       <body>
         {children}
         {/* visitas do site (relatório mensal no painel da DVLS); data-secao nos blocos dá o nome de cada parte */}

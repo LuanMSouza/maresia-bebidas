@@ -6,26 +6,69 @@ export default function Hero() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
+                    // as duas unidades (as mesmas do rodapé). Horário só da adega: o da
+                    // distribuidora no site é "comercial", sem hora exata, então fica de fora
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "LocalBusiness",
-                        "name": "Maresia Bebidas",
-                        "image": "https://maresia-bebidas.com/logo.png",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "Av. Affonso Penna, 589",
-                            "addressLocality": "Santos",
-                            "addressRegion": "SP",
-                            "postalCode": "11020-001",
-                            "addressCountry": "BR"
-                        },
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": -23.9615,
-                            "longitude": -46.3150
-                        },
-                        "url": "https://maresia-bebidas.com",
-                        "telephone": "+5513991868515"
+                        "@graph": [
+                            {
+                                "@type": "Organization",
+                                "@id": "https://maresia-bebidas.com/#empresa",
+                                "name": "Maresia Bebidas",
+                                "url": "https://maresia-bebidas.com",
+                                "logo": "https://maresia-bebidas.com/icon.png",
+                                "foundingDate": "2007",
+                                "areaServed": "Baixada Santista",
+                                "contactPoint": [
+                                    { "@type": "ContactPoint", "telephone": "+5513991868515", "contactType": "sales", "availableLanguage": "Portuguese" },
+                                    { "@type": "ContactPoint", "telephone": "+5513997739347", "contactType": "customer service", "availableLanguage": "Portuguese" }
+                                ]
+                            },
+                            {
+                                "@type": "LiquorStore",
+                                "@id": "https://maresia-bebidas.com/#adega",
+                                "name": "Maresia Bebidas - Adega",
+                                "parentOrganization": { "@id": "https://maresia-bebidas.com/#empresa" },
+                                "image": "https://maresia-bebidas.com/opengraph-image.jpg",
+                                "url": "https://maresia-bebidas.com",
+                                "telephone": "+5513991868515",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "Av. Affonso Penna, 589",
+                                    "addressLocality": "Santos",
+                                    "addressRegion": "SP",
+                                    "postalCode": "11020-001",
+                                    "addressCountry": "BR"
+                                },
+                                "geo": {
+                                    "@type": "GeoCoordinates",
+                                    "latitude": -23.9615,
+                                    "longitude": -46.3150
+                                },
+                                "openingHoursSpecification": [{
+                                    "@type": "OpeningHoursSpecification",
+                                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                                    "opens": "07:30",
+                                    "closes": "19:00"
+                                }]
+                            },
+                            {
+                                "@type": "WholesaleStore",
+                                "@id": "https://maresia-bebidas.com/#distribuidora",
+                                "name": "Maresia Bebidas - Distribuidora (atacado)",
+                                "parentOrganization": { "@id": "https://maresia-bebidas.com/#empresa" },
+                                "image": "https://maresia-bebidas.com/opengraph-image.jpg",
+                                "url": "https://maresia-bebidas.com",
+                                "telephone": "+5513991868515",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "Rua Conselheiro Rodrigues Alves, 206",
+                                    "addressLocality": "Santos",
+                                    "addressRegion": "SP",
+                                    "addressCountry": "BR"
+                                }
+                            }
+                        ]
                     }),
                 }}
             />
