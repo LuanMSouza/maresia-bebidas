@@ -24,7 +24,7 @@ export default function Lojas() {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-4 md:p-6 max-w-7xl mx-auto mt-8 md:mt-16">
 
             {/* CARD 1: LOGÍSTICA B2B */}
-            <div className="relative h-[500px] md:h-[450px] lg:h-[480px] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden group border border-white/5 bg-black shadow-2xl">
+            <div data-secao="Logística B2B (CNPJ)" className="relative h-[500px] md:h-[450px] lg:h-[480px] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden group border border-white/5 bg-black shadow-2xl">
                 <Image
                     src="/caminhao.jpeg"
                     alt="Frota Maresia"
@@ -57,7 +57,7 @@ export default function Lojas() {
             </div>
 
             {/* CARD 2: ATACADO VAREJO */}
-            <div className="relative h-[500px] md:h-[450px] lg:h-[480px] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden group border border-white/5 bg-[#0D1117] shadow-2xl">
+            <div data-secao="Atacado pro público" className="relative h-[500px] md:h-[450px] lg:h-[480px] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden group border border-white/5 bg-[#0D1117] shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-maresia-blue/10 via-transparent to-transparent opacity-50" />
 
                 <div className="relative h-full flex flex-col justify-end p-6 md:p-8 lg:p-10">

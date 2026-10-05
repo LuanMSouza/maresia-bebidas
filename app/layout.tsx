@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import './globals.css'
 
 export const viewport: Viewport = {
@@ -50,6 +51,8 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         {children}
+        {/* visitas do site (relatório mensal no painel da DVLS); data-secao nos blocos dá o nome de cada parte */}
+        <Script src="https://api.leads.dvls.com.br/rastreio.js" data-site="c-maresia" strategy="afterInteractive" />
       </body>
     </html>
   );

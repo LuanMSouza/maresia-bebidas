@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <div className="flex items-center justify-center flex-col min-h-[85vh] md:min-h-[70vh] text-center p-6 md:p-10">
+        <div data-secao="Início" className="flex items-center justify-center flex-col min-h-[85vh] md:min-h-[70vh] text-center p-6 md:p-10">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{

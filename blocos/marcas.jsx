@@ -13,7 +13,7 @@ const marcas = [
 
 export default function Marcas() {
     return (
-        <section className="py-20 bg-black overflow-hidden border-t border-white/5">
+        <section data-secao="Marcas" className="py-20 bg-black overflow-hidden border-t border-white/5">
             <div className="max-w-7xl mx-auto px-6 mb-10 text-center">
                 <span className="text-slate-400 text-[10px] font-bold tracking-[0.3em] uppercase">
                     Trabalhamos Com Grandes Marcas
