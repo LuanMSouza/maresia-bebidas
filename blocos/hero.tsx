@@ -6,7 +6,8 @@ export default function Hero() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
-                    // as duas unidades (as mesmas do rodapé). Horário só da adega: o da
+                    // as duas lojas (as mesmas do rodapé), cada uma com o seu número: atacado
+                    // (distribuidora) 99186-8515, varejo (adega) 99773-9347. Horário só da adega: o da
                     // distribuidora no site é "comercial", sem hora exata, então fica de fora
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
@@ -20,18 +21,18 @@ export default function Hero() {
                                 "foundingDate": "2007",
                                 "areaServed": "Baixada Santista",
                                 "contactPoint": [
-                                    { "@type": "ContactPoint", "telephone": "+5513991868515", "contactType": "sales", "availableLanguage": "Portuguese" },
-                                    { "@type": "ContactPoint", "telephone": "+5513997739347", "contactType": "customer service", "availableLanguage": "Portuguese" }
+                                    { "@type": "ContactPoint", "telephone": "+5513991868515", "contactType": "sales", "name": "Atacado (distribuidora)", "availableLanguage": "Portuguese" },
+                                    { "@type": "ContactPoint", "telephone": "+5513997739347", "contactType": "sales", "name": "Varejo (adega)", "availableLanguage": "Portuguese" }
                                 ]
                             },
                             {
                                 "@type": "LiquorStore",
                                 "@id": "https://maresia-bebidas.com/#adega",
-                                "name": "Maresia Bebidas - Adega",
+                                "name": "Maresia Bebidas - Adega (varejo)",
                                 "parentOrganization": { "@id": "https://maresia-bebidas.com/#empresa" },
                                 "image": "https://maresia-bebidas.com/opengraph-image.jpg",
                                 "url": "https://maresia-bebidas.com",
-                                "telephone": "+5513991868515",
+                                "telephone": "+5513997739347",
                                 "address": {
                                     "@type": "PostalAddress",
                                     "streetAddress": "Av. Affonso Penna, 589",
