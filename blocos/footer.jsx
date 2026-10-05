@@ -48,17 +48,23 @@ export default function Footer() {
                     <div>
                         <h3 className="text-white font-bold mb-6">Fale Conosco</h3>
                         <div className="space-y-4">
-                            <a href="tel:13997739347" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
+                            <a href="tel:+5513997739347" data-rastreio="telefone · Varejo" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
                                 <div className="p-2 rounded-lg bg-white/5 group-hover:bg-maresia-blue/10 transition-colors">
                                     <Phone size={14} className="text-maresia-blue" />
                                 </div>
-                                <span className="text-sm">(13) 99773-9347</span>
+                                <span className="flex flex-col leading-tight">
+                                    <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-maresia-blue">Varejo (adega)</span>
+                                    <span className="text-sm">(13) 99773-9347</span>
+                                </span>
                             </a>
-                            <a href="tel:13991868515" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
+                            <a href="tel:+5513991868515" data-rastreio="telefone · Atacado" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
                                 <div className="p-2 rounded-lg bg-white/5 group-hover:bg-maresia-blue/10 transition-colors">
                                     <Phone size={14} className="text-maresia-blue" />
                                 </div>
-                                <span className="text-sm">(13) 99186-8515</span>
+                                <span className="flex flex-col leading-tight">
+                                    <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-maresia-blue">Atacado (distribuidora)</span>
+                                    <span className="text-sm">(13) 99186-8515</span>
+                                </span>
                             </a>
                         </div>
                     </div>
