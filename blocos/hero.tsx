@@ -10,7 +10,7 @@ export default function Hero() {
                         "@context": "https://schema.org",
                         "@type": "LocalBusiness",
                         "name": "Maresia Bebidas",
-                        "image": "https://maresia-bebidas.com.br/logo.png",
+                        "image": "https://maresia-bebidas.com/logo.png",
                         "address": {
                             "@type": "PostalAddress",
                             "streetAddress": "Av. Affonso Penna, 589",
@@ -24,7 +24,7 @@ export default function Hero() {
                             "latitude": -23.9615,
                             "longitude": -46.3150
                         },
-                        "url": "https://maresia-bebidas.com.br",
+                        "url": "https://maresia-bebidas.com",
                         "telephone": "+5513991868515"
                     }),
                 }}

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   description: "Referência em logística de bebidas B2B e varejo em Santos. Entrega de carga pesada e a melhor adega da Baixada Santista desde 2007.",
   keywords: ["Distribuidora de bebidas Santos", "Atacado de bebidas", "Logística B2B bebidas", "Maresia Bebidas", "Adega Santos"],
   authors: [{ name: "Luan Souza Dev" }],
-  metadataBase: new URL("https://maresia-bebidas.com.br"),
+  metadataBase: new URL("https://maresia-bebidas.com"),
   openGraph: {
     title: "Maresia Bebidas - Atacado e Varejo",
     description: "O melhor preço de bebidas da Baixada Santista direto para seu comércio ou evento.",
-    url: "https://maresia-bebidas.com.br",
+    url: "https://maresia-bebidas.com",
     siteName: "Maresia Bebidas",
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://maresia-bebidas.com.br",
+    canonical: "https://maresia-bebidas.com",
   },
 };
 
